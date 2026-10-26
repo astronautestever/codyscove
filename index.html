@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CODY'S COVE</title>
+
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --black: #000000;
+      --panel: #0a0a0a;
+      --red: #ff0000;
+      --white: #ffffff;
+      --gray: #aaaaaa;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--black);
+      color: var(--white);
+      font-family: "Share Tech Mono", monospace;
+      line-height: 1.7;
+    }
+
+    a {
+      color: var(--red);
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: var(--white);
+      text-decoration: underline;
+    }
+
+    .site-header {
+      border-bottom: 2px solid var(--red);
+      padding: 24px 20px;
+      text-align: center;
+    }
+
+    .sigil {
+      color: var(--red);
+      font-size: 14px;
+      letter-spacing: 6px;
+    }
+
+    .logo {
+      margin: 10px 0;
+      color: var(--red);
+      font-family: "Black Ops One", fantasy;
+      font-size: clamp(2rem, 7vw, 4.5rem);
+      line-height: 1.1;
+      text-transform: uppercase;
+      text-shadow: 3px 3px 0 #550000;
+    }
+
+    .tagline {
+      color: var(--gray);
+      font-size: 13px;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px 22px;
+      padding: 15px;
+      border-bottom: 1px solid var(--red);
+    }
+
+    nav a {
+      font-size: 13px;
+      text-transform: uppercase;
+    }
+
+    main {
+      width: min(1000px, 92%);
+      margin: 30px auto;
+    }
+
+    .panel {
+      background: var(--panel);
+      border: 1px solid var(--red);
+      padding: 22px;
+      margin-bottom: 22px;
+    }
+
+    h2 {
+      color: var(--red);
+      font-size: 1.2rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      border-bottom: 1px solid var(--red);
+      padding-bottom: 8px;
+    }
+
+    .status {
+      display: inline-block;
+      border: 1px solid var(--red);
+      padding: 4px 9px;
+      color: var(--red);
+      font-size: 12px;
+    }
+
+    .columns {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 22px;
+    }
+
+    .link-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    .link-list li {
+      padding: 8px 0;
+      border-bottom: 1px dashed #333333;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 25px;
+      border-top: 2px solid var(--red);
+      color: var(--gray);
+      font-size: 12px;
+    }
+
+    @media (max-width: 650px) {
+      .columns {
+        grid-template-columns: 1fr;
+      }
+
+      .panel {
+        padding: 16px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="site-header" id="home">
+    <div class="sigil">† /// ✦ /// †</div>
+    <h1 class="logo">CODY'S COVE</h1>
+    <p class="tagline">PERSONAL WEBSPACE // YOU FOUND ME.</p>
+    <span class="status">✦ SITE UNDER CONSTRUCTION</span>
+  </header>
+
+  <nav>
+    <a href="#home">HOME</a>
+    <a href="#about">ABOUT</a>
+    <a href="#music">MUSIC</a>
+    <a href="#writing">WRITING</a>
+    <a href="#media">MEDIA</a>
+    <a href="#projects">PROJECTS</a>
+    <a href="#links">LINKS</a>
+  </nav>
+
+  <main>
+    <section class="panel">
+      <h2>01 // Welcome to my cove of the internet</h2>
+      <p>
+        Welcome to CODY'S COVE: my personal little corner of the web.
+        This is where I dump my interests, projects, writing, music,
+        and whatever else I feel like sharing.
+      </p>
+      <p>Just my website. Nothin' crazy :P</p>
+      <div class="sigil">───── † ───── † ─────</div>
+    </section>
+
+    <div class="columns">
+      <div>
+        <section class="panel" id="about">
+          <h2>02 // ABOUT ME</h2>
+          <p>wassuuup i'm cody</p>
+          <p>
+            teenager from nyc | he/him | STEM + music + media
+            i js like a lotta shi, hopefully you can catch up
+          </p>
+          <p>This site is a work in progress. Explore at your own risk.</p>
+        </section>
+
+        <section class="panel" id="music">
+          <h2>03 // Currently listening to</h2>
+          <p>Music that lives in my head rent-free.</p>
+          <ul class="link-list">
+            <li>» Favorite artists — coming soon</li>
+            <li>» Current rotation — coming soon</li>
+            <li>» Songs I don't play about — coming soon</li>
+          </ul>
+        </section>
+
+        <section class="panel" id="writing">
+          <h2>04 // Words & writing</h2>
+          <p>
+            stories, character writing, unfinished ideas, and
+            things I wrote at times I shouldn't be writing.
+          </p>
+          <a href="#writing">[ EXPLORE THE ARCHIVE ]</a>
+        </section>
+
+        <section class="panel" id="media">
+          <h2>05 // Media archive</h2>
+          <p>Favorite shows, games, characters, and fictional obsessions.</p>
+          <ul class="link-list">
+            <li>» Anime & manga</li>
+            <li>» Games & visual novels</li>
+            <li>» Shrines — coming soon</li>
+          </ul>
+        </section>
+      </div>
+
+      <aside>
+        <section class="panel">
+          <h2>System status</h2>
+          <ul class="link-list">
+            <li>USER: CODY</li>
+            <li>STATUS: ONLINE*</li>
+            <li>MOOD: VARIABLE</li>
+            <li>VERSION: 0.1</li>
+          </ul>
+          <p><small>*Probably.</small></p>
+        </section>
+
+        <section class="panel" id="projects">
+          <h2>06 // Projects</h2>
+          <ul class="link-list">
+            <li>» Coding experiments</li>
+            <li>» STEM projects</li>
+            <li>» Other things I'm building</li>
+          </ul>
+        </section>
+
+        <section class="panel" id="links">
+          <h2>07 // Elsewhere</h2>
+          <p>Find me around the internet.</p>
+          <ul class="link-list">
+            <li>» Social links — coming soon</li>
+            <li>» Friends' websites — coming soon</li>
+            <li>» Guestbook — coming soon</li>
+          </ul>
+        </section>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>† CODY'S COVE †</p>
+    <p>MADE BY ME. HOSTED ON GITHUB PAGES.</p>
+    <a href="#home">BACK TO TOP ↑</a>
+  </footer>
+</body>
+</html>
